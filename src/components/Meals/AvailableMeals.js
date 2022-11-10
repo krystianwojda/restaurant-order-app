@@ -1,4 +1,5 @@
 import classes from "./AvailableMeals.module.css";
+import Card from "../UI/Card";
 
 const fakeMeals = [
     {
@@ -28,7 +29,7 @@ const fakeMeals = [
 ];
 
 const AvailableMeals = () => {
-    const mealList = fakeMeals.map((meal) =>(<li>{meal.name}</li>))
+    const mealList = fakeMeals.map((meal) =>(<Card><li>{meal.name}</li></Card>))
 
     return(
         <section className={classes.meals}>
