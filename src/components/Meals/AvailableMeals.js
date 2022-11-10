@@ -30,7 +30,15 @@ const fakeMeals = [
 ];
 
 const AvailableMeals = () => {
-    const mealList = fakeMeals.map((meal) =>(<Card><MealItem key={meal.id} name={meal.name} description={meal.description} price={meal.price}/></Card>))
+    const mealList = fakeMeals.map((meal) =>(
+        <Card>
+            <MealItem
+                key={meal.id}
+                name={meal.name}
+                description={meal.description}
+                price={meal.price}
+            />
+        </Card>))
 
     return(
         <section className={classes.meals}>
