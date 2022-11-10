@@ -31,9 +31,8 @@ const fakeMeals = [
 
 const AvailableMeals = () => {
     const mealList = fakeMeals.map((meal) =>(
-        <Card>
+        <Card key={meal.id}>
             <MealItem
-                key={meal.id}
                 name={meal.name}
                 description={meal.description}
                 price={meal.price}
