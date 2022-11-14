@@ -1,4 +1,5 @@
-import {Fragment, useState} from "react";
+import {useState} from "react";
+import CartProvider from "./store/CartProvider";
 import Header from "./components/Layout/Header";
 import AvailableMeals from "./components/Meals/AvailableMeals";
 import Banner from "./components/Layout/Banner";
@@ -15,14 +16,14 @@ function App() {
     };
 
     return (
-        <Fragment>
+        <CartProvider>
             {cartIsShown && <Cart onClose={hideCartHandler}/>}
             <Header onShowCart={showCartHandler}/>
             <Banner/>
             <main>
                 <AvailableMeals/>
             </main>
-       </Fragment>
+       </CartProvider>
     );
 }
 
