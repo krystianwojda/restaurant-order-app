@@ -11,20 +11,20 @@ const fakeMeals = [
     },
     {
         id: 2,
-        name: "Kebab rolo",
-        description: "Tortilla, mięso, surówka, sos",
+        name: "Kebab na talerzu",
+        description: "Mięso, surówka, frytki, sos",
         price: 23
     },
     {
         id: 3,
-        name: "Sushi",
-        description: "Hosomoak ogórek, California łosoś",
+        name: "Kebab na talerzu",
+        description: "Mięso, surówka, frytki, sos",
         price: 67
     },
     {
         id: 4,
-        name: "Kotlet schabowy",
-        description: "Kotlet schabowy (200g), surówka, ziemniaki",
+        name: "Kebab na talerzu",
+        description: "Mięso, surówka, frytki, sos",
         price: 17
     }
 ];
